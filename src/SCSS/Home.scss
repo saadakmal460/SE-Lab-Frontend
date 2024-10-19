@@ -1,0 +1,88 @@
+// Home.scss
+
+.home-container {
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 7rem 1rem;
+      max-width: 72rem;
+      margin: 0 auto;
+      
+      h1 {
+        font-size: 3rem;
+        color: #64748b; // slate-700
+        font-weight: bold;
+  
+        span {
+          color: #94a3b8; // slate-500
+        }
+  
+        @media (min-width: 1024px) {
+          font-size: 4rem;
+        }
+      }
+  
+      .subtext {
+        font-size: 0.875rem;
+        color: #9ca3af; // gray-400
+  
+        @media (min-width: 640px) {
+          font-size: 1rem;
+        }
+      }
+  
+      .cta-link {
+        font-size: 0.875rem;
+        color: #1e40af; // blue-800
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .swiper-container {
+      .swiper-slide {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  
+    .listings-section {
+      max-width: 72rem;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+      .listing-group {
+        .listing-header {
+          margin-bottom: 0.75rem;
+  
+          h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #475569; // slate-600
+          }
+  
+          .show-more-link {
+            font-size: 0.875rem;
+            color: #1e40af; // blue-800
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+  
+        .listings-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+  
